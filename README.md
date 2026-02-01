@@ -25,17 +25,17 @@ mysqladmin ping -u root -p
 ## Variáveis de ambiente
 Copie `.env.example` para `.env` e ajuste. Principais chaves:
 
-| Variável             | Padrão           | Observação                                                |
-|----------------------|-------------|------------------|-----------------------------------------------------------|
-| PORT                 | 5000             | Porta HTTP da API                                         |
-| DB_HOST              | localhost        | Host do MySQL                                             |
-| DB_USER              | root             | Usuário do MySQL                                          |
-| DB_PASSWORD          | (vazia)          | Senha do MySQL                                            |
-| DB_NAME              | mini_kanban      | Nome do banco usado pela aplicação                        |
-| DB_CONNECTION_LIMIT  | 10               | Tamanho do pool                                           |
-| JWT_ACCESS_SECRET    | —                | Segredo para assinar tokens JWT                           |
-| JWT_ACCESS_TTL       | 1d               | Expiração do access token (ex.: `12h`, `7d`)              |
-| BCRYPT_SALT_ROUNDS   | 10               | Custo do hash de senha                                    |
+| Variável             | Padrão      | Observação                                               |
+|----------------------|-------------|----------------------------------------------------------|
+| PORT                 | 5000        | Porta HTTP da API                                        |
+| DB_HOST              | localhost   | Host do MySQL                                            |
+| DB_USER              | root        | Usuário do MySQL                                         |
+| DB_PASSWORD          | (vazia)     | Senha do MySQL                                           |
+| DB_NAME              | mini_kanban | Nome do banco usado pela aplicação                       |
+| DB_CONNECTION_LIMIT  | 10          | Tamanho do pool                                          |
+| JWT_ACCESS_SECRET    | —           | Segredo para assinar tokens JWT                          |
+| JWT_ACCESS_TTL       | 1d          | Expiração do access token (ex.: `12h`, `7d`)             |
+| BCRYPT_SALT_ROUNDS   | 10          | Custo do hash de senha                                   |
 
 Para testes você pode criar um `.env.test`; o Jest usa `NODE_OPTIONS=--experimental-vm-modules` e o setup define `JWT_ACCESS_SECRET` se faltar.
 
