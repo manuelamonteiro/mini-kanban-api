@@ -137,3 +137,6 @@ Testes não dependem de banco porque os services e o middleware de auth são moc
 ```bash
 npm test
 ```
+### Links relacionados
+- Github do front-end: https://github.com/manuelamonteiro/mini-kanban
+- Vídeo: https://www.youtube.com/watch?v=vEgLDAbjgNQ
